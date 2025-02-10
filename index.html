@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mateusz Zynek</title>
+        <!-- Font Awesome dla ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Biblioteka AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nawigacja -->
+    <header>
+        <h1>Mateusz Zynek - Junior Developer on the Rise</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sekcja Home -->
+     <section id="home" data-aos="fade-up">
+        <div class="home-container">
+            <div class="home-text">
+                <h1>Witaj jestem Mateusz!</h1>
+                <p>Chcę zostać programistą, który rozwija się w Pythonie, JavaScript i SQL</p>
+            </div>
+            <img src="images/JavaScript frameworks-amico.png" alt="Programowanie" class="home-image">
+        </div>
+     </section>
+
+    <!-- Sekcja O mnie -->
+    <section id="about" data-aos="fade-up">
+        <div class="about-container">
+            <img src="images/me.jpg" alt="Moje zdjęcie" class="profile-pic">
+            <div class="about-text">
+                <h2>O mnie</h2>
+                <p>Jestem studentem informatyki i tworzę oprogramowanie. Moje umiejętności obejmują:</p>
+                <div class="skills-container">
+                    <div class="skill" data-aos="zoom-in">Python</div>
+                    <div class="skill" data-aos="zoom-in">JavaScript</div>
+                    <div class="skill" data-aos="zoom-in">SQL</div>
+                    <div class="skill" data-aos="zoom-in">HTML & CSS</div>
+                    <div class="skill" data-aos="zoom-in">Git & GitHub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- Sekcja Projekty -->
+       <section id="projects">
+        <h2 data-aos="fade-up" data-aos-duration="1500">Moje Projekty</h2>
+       </section>
+
+       <!-- Sekcja Kontakt -->
+       <section id="contact" data-aos="fade-up">
+        <h2>Kontakt</h2>
+        <p>Możesz skontaktować się ze mną przez email: <strong>mateuszzynek12@gmail.com</strong></p>
+        <form id="contact-form" data-aos="fade-up">
+            <input type="text" id="name" placeholder="Twoje imie" required>
+            <input type="text" id="email" placeholder="Twoj e-mail" required>
+            <textarea id="message" placeholder="Twoja wiadomosc" required></textarea>
+            <button type="submit">Wyslij</button>
+        </form>
+        
+        <p id="form-message" style="display: none; color: green; margin-top: 10px;">Twoja wiadomosc zostala wysłana!</p>
+       </section>
+
+       <!--  Sekjca Footer (stopka) -->
+       <footer>
+        <p>&copy; 2025 Mateusz. Wszelkie prawa zastrzeżone</p>
+
+        <!-- Social Media -->
+         <div class="social-media">
+            <a href="https://www.facebook.com/mateusz.zynek.1?mibextid=wwXIfr&rdid=XImSXeL51FXWtl2q&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15uNNUiJnn%2F%3Fmibextid%3DwwXIfr#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/mateusz_zynek/?igsh=MXFqZG95Z3Zrb3gyYw%3D%3D&utm_source=qr#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mateusz-zynek-78477126b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </footer>
+
+       <!-- Strzałka "powrót do góry" -->
+       <button id="scrollToTop">
+        &#8679;     <!-- Kod strzałki w górę -->
+       </button>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+       <script>
+            AOS.init();         // Uruchamiamy animację AOS
+        </script>
+       <script src="script.js"></script>
+</body>
+</html>
